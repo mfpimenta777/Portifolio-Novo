@@ -204,9 +204,11 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: "Desenvolvedor Web";
+    content: "";
     color: var(--main-color);
     animation: words 20s infinite;
+    white-space: nowrap;
+    
 }
 .text-animation span::after{
     content: "";
@@ -227,11 +229,12 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Desenvolvedor Front-End";
+        content:"Desenvolvedor Front-End";
+        
     }
     21%,
     40%{
-        content: "Web Designer";
+        content: "Web Designer / Freelancer";
     }
     41%,
     60%{
@@ -778,12 +781,12 @@ meta[name="viewport"] {
     }
 
     .testimonials-item {
-        width: 90%; /* Para evitar que o item fique muito pequeno em telas pequenas */
+        width: 90%; 
         max-width: 100%;
     }
 
     .testimonials-box img {
-        width: 100%; /* Faz as imagens se ajustarem ao contêiner */
+        width: 100%; 
     }
 }
 
